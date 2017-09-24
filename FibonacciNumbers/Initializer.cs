@@ -13,7 +13,6 @@ namespace FibonacciInitializer
     {
         private readonly IRestService _restService;
         private readonly IInitializerBusService _busService;
-        private static ILog log = LogManager.GetLogger("Logger");
 
         public Initializer(IRestService restService, IInitializerBusService busService)
         {
@@ -36,19 +35,19 @@ namespace FibonacciInitializer
 
             var parallelismDegree = Convert.ToInt32(Console.ReadLine());
 
-            for (int i = 0; i < parallelismDegree; i++)
+            for (int i = 0; i <= parallelismDegree; i++)
             {
                 tasks.Add(Task.Factory.StartNew(() => initializer.StartSequence()));
             }
 
             try
             {
-                log.Info("Начало параллельного расчета");
+                LogConfig.Log.Info("Начало параллельного расчета");
                 await Task.WhenAll(tasks.ToArray());
             }
             catch (Exception ex)
             {
-                log.Error($"Ошибка во время параллельного расчета: {ex}");
+                LogConfig.Log.Error($"Ошибка во время параллельного расчета: {ex}");
             }
         }
 

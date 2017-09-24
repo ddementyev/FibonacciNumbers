@@ -27,7 +27,7 @@ namespace Fibonacci.Infrastructure.Services
                     });
 
                     bus.Start();
-                    //Для получения чисел происходит вызов подписанного ConsumerService
+                    //Для получения чисел после Start происходит вызов подписанного ConsumerService
                     bus.Stop();
                 }
 
