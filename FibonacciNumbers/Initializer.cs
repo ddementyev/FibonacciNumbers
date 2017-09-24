@@ -1,7 +1,6 @@
-﻿using Febonacci.Infrastructure.Configuration;
+﻿using Fibonacci.Infrastructure.Configuration;
 using Fibonacci.Infrastructure.Interfaces;
 using Fibonacci.Infrastructure.Services;
-using log4net;
 using Nito.AsyncEx;
 using System;
 using System.Collections.Generic;

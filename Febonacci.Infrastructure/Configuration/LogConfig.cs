@@ -1,7 +1,7 @@
 ﻿using log4net;
 using log4net.Config;
 
-namespace Febonacci.Infrastructure.Configuration
+namespace Fibonacci.Infrastructure.Configuration
 {
     public static class LogConfig
     {

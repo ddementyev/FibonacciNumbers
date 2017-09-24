@@ -1,5 +1,4 @@
-﻿using Febonacci.Infrastructure.Configuration;
-using Fibonacci.Infrastructure.Configuration;
+﻿using Fibonacci.Infrastructure.Configuration;
 using System.Web.Http;
 using WebApi.StructureMap;
 

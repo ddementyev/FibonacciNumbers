@@ -1,4 +1,4 @@
-﻿using Febonacci.Infrastructure.Configuration;
+﻿using Fibonacci.Infrastructure.Configuration;
 using Fibonacci.Infrastructure.Interfaces;
 using Fibonacci.Infrastructure.Models;
 using Newtonsoft.Json;
